@@ -8,8 +8,8 @@ function takeANumber(todayLine,newName){
 function nowServing(katzDeliLine){
   var nextInLine = "There is nobody waiting to be served!";
   if (katzDeliLine[0]!==undefined){
-      var beingServed = katzDeliLine.shift();
-      nextInLine = ("Currently serving "+beingServed+".");
+      //var beingServed = katzDeliLine.shift();
+      nextInLine = ("Currently serving "+katzDeliLine.shift()+".");
     }
   return nextInLine;
 }
