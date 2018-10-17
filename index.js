@@ -11,10 +11,9 @@ function takeANumber(todayLine){
 }
 
 
-[5,6,7]
-[6, 7]
-[7, 8]
 []
+[1]
+[1,2]
 
 function nowServing(katzDeliLine){
   var nextInLine = "There is nobody waiting to be served!";
