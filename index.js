@@ -2,6 +2,9 @@ var newNum = 0;
 function takeANumber(todayLine){
   if(todayLine[0]!==undefined){
   newNum = todayLine[todayLine.length - 1] + 1
+  } else {
+    
+  }
     todayLine.push(newNum);
     var welcomeNewName = ("You have number " + (todayLine[todayLine.length - 1]));
     return welcomeNewName;
