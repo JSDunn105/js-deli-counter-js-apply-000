@@ -1,9 +1,13 @@
 
-function takeANumber(todayLine,newName){
-    todayLine.push(newName);
+function takeANumber(todayLine){
+  var newNum = todayLine[todayLine.length - 1] + 1
+    todayLine.push(newNum);
     var welcomeNewName = ("Welcome, "+ newName+". You are number " + (todayLine.length)+" in line.");
     return welcomeNewName;
 }
+
+
+[5,6,7]
 
 function nowServing(katzDeliLine){
   var nextInLine = "There is nobody waiting to be served!";
