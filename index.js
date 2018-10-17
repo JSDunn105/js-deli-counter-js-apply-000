@@ -1,11 +1,6 @@
 var newNum = 1;
 function takeANumber(todayLine){
-  if(todayLine[0]!==undefined){
-  newNum = todayLine[todayLine.length - 1] + 1
-  todayLine.push(newNum)
-  } else {
-    todayLine[0] = newNum
-  };
+  newNum += 1
     var welcomeNewName = ("You have number " + (todayLine[todayLine.length - 1]));
     return welcomeNewName;
 }
@@ -14,6 +9,12 @@ function takeANumber(todayLine){
 []
 [1]
 [1,2]
+if(todayLine[0]!==undefined){
+  newNum = todayLine[todayLine.length - 1] + 1
+  todayLine.push(newNum)
+  } else {
+    todayLine[0] = newNum
+  };
 
 function nowServing(katzDeliLine){
   var nextInLine = "There is nobody waiting to be served!";
