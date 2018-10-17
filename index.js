@@ -1,13 +1,9 @@
-var katzDeliLine = [];
-var newName=(prompt("Enter your name to take a number."));
-var todayLine = katzDeliLine;
+
 function takeANumber(todayLine,newName){
     todayLine.push(newName);
-    katzDeliLine = todayLine;
-    var welcomeNewName = ("Welcome, "+ newName+". You are number " + (katzDeliLine.length)+" in line.");
+    var welcomeNewName = ("Welcome, "+ newName+". You are number " + (todayLine.length)+" in line.");
     return welcomeNewName;
 }
-takeANumber();
 
 function nowServing(katzDeliLine){
   var nextInLine = "There is nobody waiting to be served!";
@@ -17,7 +13,6 @@ function nowServing(katzDeliLine){
     }
   return nextInLine;
 }
-nowServing();
 
 
 function currentLine(arrLine){
@@ -33,4 +28,3 @@ function currentLine(arrLine){
       } 
   return theLine;
 }
-currentLine(line);
