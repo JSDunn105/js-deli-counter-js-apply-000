@@ -3,7 +3,7 @@ function takeANumber(todayLine){
   if(todayLine[0]!==undefined){
   newNum = todayLine[todayLine.length - 1] + 1
     todayLine.push(newNum);
-    var welcomeNewName = ("You have number " + (todayLine[todayLine.length - 1])+" in line.");
+    var welcomeNewName = ("You have number " + (todayLine[todayLine.length - 1]));
     return welcomeNewName;
 }
 
