@@ -1,4 +1,4 @@
-var newNum = 0;
+var newNum = 1;
 function takeANumber(todayLine){
   if(todayLine[0]!==undefined){
   newNum = todayLine[todayLine.length - 1] + 1
