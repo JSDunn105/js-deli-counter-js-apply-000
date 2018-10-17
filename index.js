@@ -1,6 +1,7 @@
 var newNum = 0;
 function takeANumber(todayLine){
   newNum += 1
+  todayLine.push(newNum)
     var welcomeNewName = ("You have number " + (todayLine[todayLine.length - 1]));
     return welcomeNewName;
 }
